@@ -1,0 +1,20 @@
+.Net 8.0 kullanılarak yazılmıştır. Kullandığım nuget paketleri şu şekildedir:
+1-Microsoft.EntityFrameworkCore(9.0.0)
+2-Microsoft.EntityFrameworkCore.Design(9.0.0)
+3-Microsoft.EntityFrameworkCore.Tools(9.0.0)
+4-Npsql(9.0.1)
+5-Npsql.EntityFrameworkCore.PostgreSQL(9.0.1)
+
+Repository Desing Pattern sayesinde classlarımızı bir birine bağımlı olmasını azaltmış bulunmaktayız. Bağılmı olan classlarımızı ise Base classlar sayesinde tek bir noktada toplamış bulunmaktayız.
+4 farklı katman kullanmış bulunmaktayız. Bunlar ise şu şekildedir.
+1-EntityLayer Katmanı => Model classlarımızı yazdığımız en içerideki katmandır.
+2-DataAccessLayer Katmanı => Database bağlantılarımızı ve genel kuralları yazdığımız katmandır. EntityLayer katmanıyla bire bir iletişimdedir.
+3-BusinessLayer Katmanı => Yapılacak iş için kuralların yazıldığı katmandır. İnce işlenen ve PresentationLayer katmanıyla bire bir iletişimde olan katmandır. Buradaki kurallar detaylı yazılmaktadır.
+4-PresentationLayer Katmanı => Dış görüntü katmanıdır. Controller ve View için kodlar bu katmanda yazılır. 
+
+PostgreSql kullandığımdan ötürü Migration işleminde hata aldım. Bu hatayı çözmek için aşağıdaki adımları izledim. Adımlar ise şu şekildedir:
+1-RepositoryDesingPattern.DataAccessLayer projesi içerisindeki Conrete klasörüne gittim.
+2-Concrete klasörü içerisine DesignTimeDbContextFactory.cs adlı classı oluşturdum. Kodları proje içerisine giderek görebilirsiniz.
+3-Class sayesinde PostgreSQL migration tanımlamasını hata almadan yapmış oldu. 
+
+
