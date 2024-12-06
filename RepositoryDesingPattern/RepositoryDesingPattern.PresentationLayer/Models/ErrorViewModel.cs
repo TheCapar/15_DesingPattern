@@ -1,4 +1,4 @@
-namespace DesingPattern.Repository.Models
+namespace RepositoryDesingPattern.PresentationLayer.Models
 {
     public class ErrorViewModel
     {

@@ -1,8 +1,8 @@
-using DesingPattern.Repository.Models;
 using Microsoft.AspNetCore.Mvc;
+using RepositoryDesingPattern.PresentationLayer.Models;
 using System.Diagnostics;
 
-namespace DesingPattern.Repository.Controllers
+namespace RepositoryDesingPattern.PresentationLayer.Controllers
 {
     public class HomeController : Controller
     {
