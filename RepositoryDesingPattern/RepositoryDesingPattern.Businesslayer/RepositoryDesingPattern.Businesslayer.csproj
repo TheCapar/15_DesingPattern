@@ -20,4 +20,9 @@
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\RepositoryDesingPattern.DataAccessLayer\RepositoryDesingPattern.DataAccessLayer.csproj" />
+    <ProjectReference Include="..\RepositoryDesingPattern.EntityLayer\RepositoryDesingPattern.EntityLayer.csproj" />
+  </ItemGroup>
+
 </Project>
