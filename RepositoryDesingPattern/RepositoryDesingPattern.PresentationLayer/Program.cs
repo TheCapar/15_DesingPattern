@@ -1,10 +1,25 @@
 using Microsoft.EntityFrameworkCore;
+using RepositoryDesingPattern.BusinessLayer.Abstract;
+using RepositoryDesingPattern.BusinessLayer.Concrete;
+using RepositoryDesingPattern.DataAccessLayer.Abstract;
 using RepositoryDesingPattern.DataAccessLayer.Concrete;
+using RepositoryDesingPattern.DataAccessLayer.EntityFramework;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+builder.Services.AddDbContext<Context>(options =>
+    options.UseNpgsql(connectionString));
+
+//Add Scoped 
+builder.Services.AddScoped<ICategoryService, CategoryManager>();
+builder.Services.AddScoped<ICategoryDal, EfCategoryDal>();
+builder.Services.AddScoped<IProductService, ProductManager>();
+builder.Services.AddScoped<IProductDal, EfProductDal>();
+
 
 var app = builder.Build();
 
@@ -16,9 +31,8 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 //Add PostreSql in Program.cs
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-builder.Services.AddDbContext<Context>(options =>
-    options.UseNpgsql(connectionString));
+
+
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();

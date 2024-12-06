@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\RepositoryDesingPattern.Businesslayer\RepositoryDesingPattern.Businesslayer.csproj" />
+    <ProjectReference Include="..\RepositoryDesingPattern.Businesslayer\RepositoryDesingPattern.BusinessLayer.csproj" />
     <ProjectReference Include="..\RepositoryDesingPattern.DataAccessLayer\RepositoryDesingPattern.DataAccessLayer.csproj" />
     <ProjectReference Include="..\RepositoryDesingPattern.EntityLayer\RepositoryDesingPattern.EntityLayer.csproj" />
   </ItemGroup>

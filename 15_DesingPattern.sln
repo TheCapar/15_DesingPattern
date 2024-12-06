@@ -5,7 +5,7 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RepositoryDesingPattern", "RepositoryDesingPattern", "{BA0874C0-6453-4F83-AAB2-60355B5E4D1D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepositoryDesingPattern.Businesslayer", "RepositoryDesingPattern\RepositoryDesingPattern.Businesslayer\RepositoryDesingPattern.Businesslayer.csproj", "{A0F29E16-2999-4124-8EFF-B220E6065581}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepositoryDesingPattern.BusinessLayer", "RepositoryDesingPattern\RepositoryDesingPattern.Businesslayer\RepositoryDesingPattern.BusinessLayer.csproj", "{A0F29E16-2999-4124-8EFF-B220E6065581}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepositoryDesingPattern.DataAccessLayer", "RepositoryDesingPattern\RepositoryDesingPattern.DataAccessLayer\RepositoryDesingPattern.DataAccessLayer.csproj", "{79C1A401-7A5C-4639-9D2E-8574F971CE72}"
 EndProject

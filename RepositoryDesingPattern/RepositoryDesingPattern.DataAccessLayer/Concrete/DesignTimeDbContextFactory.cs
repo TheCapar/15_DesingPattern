@@ -6,11 +6,12 @@ namespace RepositoryDesingPattern.DataAccessLayer.Concrete
 {
     public class DesignTimeDbContextFactory : IDesignTimeDbContextFactory<Context>
     {
+        //If you write the following codes, migration will be successful
         public Context CreateDbContext(string[] args)
         {
-            // appsettings.json'daki bağlantı dizgisini okuyun
+            // Read appsettings.json
             var configuration = new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory()) // SetBasePath kullanılabilir hale gelir
+                .SetBasePath(Directory.GetCurrentDirectory()) 
                 .AddJsonFile("appsettings.json")
                 .Build();
 

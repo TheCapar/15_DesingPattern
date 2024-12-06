@@ -3,6 +3,7 @@ using RepositoryDesingPattern.EntityLayer.Concrete;
 
 namespace RepositoryDesingPattern.DataAccessLayer.Concrete
 {
+    //My db tables
     public class Context:DbContext
     {
         public Context(DbContextOptions<Context> options):base(options) { }

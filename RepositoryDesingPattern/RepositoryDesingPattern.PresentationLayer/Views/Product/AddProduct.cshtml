@@ -1,0 +1,29 @@
+﻿@model RepositoryDesingPattern.EntityLayer.Concrete.Product
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = null;
+}
+<head>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<div class="container">
+    <br />
+    <form method="post">
+        <label>Product Name</label>
+        <input type="text" asp-for="ProductName" class="form-controller" />
+        <br />
+        <label>Product Price</label>
+        <input type="text" asp-for="ProductPrice" class="form-controller" />
+        <br />
+        <label>Product Stock</label>
+        <input type="text" asp-for="ProductStock" class="form-controller" />
+        <br />
+        <label>Product Name</label>
+        @Html.DropDownListFor(x => x.CategoryId, (List<SelectListItem>)ViewBag.v,new {@class = "form-controll"})
+        <br />
+        <button class="btn btn-info">Save</button>
+    </form>
+</div>
+
