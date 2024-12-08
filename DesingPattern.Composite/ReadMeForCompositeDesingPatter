@@ -1,1 +1,13 @@
-.Net 8.0
+.Net 8.0 kullanılarak yazılmıştır. Kullandığım nuget paketleri şu şekildedir:
+1-Microsoft.EntityFrameworkCore(9.0.0)
+2-Microsoft.EntityFrameworkCore.Design(9.0.0)
+3-Microsoft.EntityFrameworkCore.Tools(9.0.0)
+4-Microsoft.EntityFrameworkCore.SqlServer(9.0.0)
+MSSQL server kullanmış bulunmaktayım.
+
+Composite Desing Pattern database içerisinde tutulan verileri en alt birim olacak şekilde parçalama işlemine denir.
+Örnek olaraktan Arçelik A++ çamaşır makinesini toplamak istersek. 
+Arçelik A++ çamaşır makinesi => A++ çamaşır makinesi => çamaşır makinesi => beyaz eşya şeklinde toplayabiliriz.
+Aynı şekil beyaz eşyayı parçalamak istersekte tersine bir yön izleyebiliriz. 
+Composite Desing Pattern verileri en detaylı haliyle yönetmemizi sağlar.
+
