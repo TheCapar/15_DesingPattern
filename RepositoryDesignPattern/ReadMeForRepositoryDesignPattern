@@ -5,7 +5,7 @@
 4-Npsql(9.0.1)
 5-Npsql.EntityFrameworkCore.PostgreSQL(9.0.1)
 
-Repository Desing Pattern sayesinde classlarımızı bir birine bağımlı olmasını azaltmış bulunmaktayız. Bağılmı olan classlarımızı ise Base classlar sayesinde tek bir noktada toplamış bulunmaktayız.
+Repository Design Pattern sayesinde classlarımızı bir birine bağımlı olmasını azaltmış bulunmaktayız. Bağılmı olan classlarımızı ise Base classlar sayesinde tek bir noktada toplamış bulunmaktayız.
 4 farklı katman kullanmış bulunmaktayız. Bunlar ise şu şekildedir.
 1-EntityLayer Katmanı => Model classlarımızı yazdığımız en içerideki katmandır.
 2-DataAccessLayer Katmanı => Database bağlantılarımızı ve genel kuralları yazdığımız katmandır. EntityLayer katmanıyla bire bir iletişimdedir.
@@ -13,7 +13,7 @@ Repository Desing Pattern sayesinde classlarımızı bir birine bağımlı olmas
 4-PresentationLayer Katmanı => Dış görüntü katmanıdır. Controller ve View için kodlar bu katmanda yazılır. 
 
 PostgreSql kullandığımdan ötürü Migration işleminde hata aldım. Bu hatayı çözmek için aşağıdaki adımları izledim. Adımlar ise şu şekildedir:
-1-RepositoryDesingPattern.DataAccessLayer projesi içerisindeki Conrete klasörüne gittim.
+1-RepositoryDesignPattern.DataAccessLayer projesi içerisindeki Conrete klasörüne gittim.
 2-Concrete klasörü içerisine DesignTimeDbContextFactory.cs adlı classı oluşturdum. Kodları proje içerisine giderek görebilirsiniz.
 3-Class sayesinde PostgreSQL migration tanımlamasını hata almadan yapmış oldu. 
 
