@@ -1,0 +1,11 @@
+.Net 8.0 kullanılarak yazılmıştır. Kullandığım nuget paketleri şu şekildedir:
+1-Microsoft.EntityFrameworkCore(9.0.0)
+2-Microsoft.EntityFrameworkCore.Design(9.0.0)
+3-Microsoft.EntityFrameworkCore.Tools(9.0.0)
+4-Microsoft.EntityFrameworkCore.SqlServer(9.0.0)
+MSSQL Database ile yazılmıştır.
+
+Objelere odaklı bir design pattern çeşididir. Verileri en detaydan en detaysız şeklinde saklama yöntemini ve onları nasıl kullanacığımızı öğrendiğimiz design patterndir.
+Örnek olaraktan Arçelik A++ 850 çamaşır makinesini yönetmek istediğimizde aşağıdaki şekilde yönetebiliriz.
+Beyaz eşya => çamaşır makinesi => A++ çamaşır makinesi => Arçelik çamaşır makinesi => Arçelik A++ 850 çamaşır makinesi olacak şekilde objemizi yönetmiş oluruz.
+Burada kademeli ilerleyerekten objelerimizin nerede olduğunu ve kaçar adet olduğunu vb özellikleri bulabiliriz.
