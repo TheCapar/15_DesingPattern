@@ -1,9 +1,9 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
-    <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
@@ -21,9 +21,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\RepositoryDesingPattern.Businesslayer\RepositoryDesingPattern.BusinessLayer.csproj" />
-    <ProjectReference Include="..\RepositoryDesingPattern.DataAccessLayer\RepositoryDesingPattern.DataAccessLayer.csproj" />
-    <ProjectReference Include="..\RepositoryDesingPattern.EntityLayer\RepositoryDesingPattern.EntityLayer.csproj" />
+    <ProjectReference Include="..\RepositoryDesignPattern.DataAccessLayer\RepositoryDesingPattern.DataAccessLayer.csproj" />
+    <ProjectReference Include="..\RepositoryDesignPattern.EntityLayer\RepositoryDesingPattern.EntityLayer.csproj" />
   </ItemGroup>
 
 </Project>
