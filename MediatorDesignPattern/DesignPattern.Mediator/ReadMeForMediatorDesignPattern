@@ -1,0 +1,17 @@
+.Net 8.0 kullanılarak yazılmıştır. Kullandığım nuget paketleri şu şekildedir:
+1-Microsoft.EntityFrameworkCore(9.0.0)
+2-Microsoft.EntityFrameworkCore.Design(9.0.0)
+3-Microsoft.EntityFrameworkCore.Tools(9.0.0)
+4-Microsoft.EntityFrameworkCore.SqlServer(9.0.0)
+5-MediatR(12.4.1)
+MSSQL server databasi kullanılmıştır.
+
+Mediator Design Pattern sayesinde presentationLayer katmanında iş yükünü azaltmış olup. Bu katmanı dataAccess katmanına yıkmış oluyoruz. 
+Bu iş yükünü verme işlemi yaparken 4 farklı klasör içerisinde classlarımızı tutmaktayız. Bu klasörler ve içerisindeki classlar şu şekildedir:
+1-Commands Klasörü=> Dışarıdan gelmesini istediğimiz nesnelerin barındığı model classıdır. IRequest ile interface etkileşimi almalıdır.
+2-Handlers Klasörü => Database ile bağlantı yapılaraktan işlem yapılacak obje veya model classının kurallarının yazıldığı yerdir. Bir nevi business katmanındaki operatör işlemlerinin yapıldığı yer diyebiliriz.
+                      Burası ise IRequestHandler interface ile etkileşim alınan yerdir. 
+3-Queries Klasörü => Burada ise controller classından almak istediğimiz verileri ve bu verileri IRequest interface'i kullanarak Results klasörü içerisindeki model classları ile paylaştığımız yerdir.
+4-Results Klasörü => Dışarıya göndermek istediğimiz model classları bu klasör içerisinde bulunur. 
+
+Ve bu yukarıki işlemler sayesinde controller classımız içerisinde kod ve işlem kalabalığını azaltmış olup. Kod okunurluğunu artırmış ve işlemlerin çakışma ihtimalini azaltmış oluyoruz.
