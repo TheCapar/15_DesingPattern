@@ -29,6 +29,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RepositoryDesignPattern.Pre
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepositoryDesingPattern.PresentationLayer", "RepositoryDesignPattern\RepositoryDesignPattern.PresentationLayer\RepositoryDesingPattern.PresentationLayer.csproj", "{5D90BFC0-14C1-497B-9067-31AF62C29D70}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IteratorDesignPattern", "IteratorDesignPattern", "{F6BB2A03-9B73-468E-B536-04068AB78A02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPattern.Iterator", "IteratorDesignPattern\DesignPattern.Itarator\DesignPattern.Iterator.csproj", "{61BBB901-BC54-4C61-A7E9-5515E028D86D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +63,10 @@ Global
 		{5D90BFC0-14C1-497B-9067-31AF62C29D70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D90BFC0-14C1-497B-9067-31AF62C29D70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D90BFC0-14C1-497B-9067-31AF62C29D70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61BBB901-BC54-4C61-A7E9-5515E028D86D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61BBB901-BC54-4C61-A7E9-5515E028D86D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61BBB901-BC54-4C61-A7E9-5515E028D86D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61BBB901-BC54-4C61-A7E9-5515E028D86D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -74,6 +82,7 @@ Global
 		{3386E841-5228-472C-8DC3-24D19AA53014} = {748E6B55-8A25-4D68-88F4-FB0BB63672F5}
 		{8579E89B-5D8F-49DC-BBAD-732BBB1DFF67} = {BA0874C0-6453-4F83-AAB2-60355B5E4D1D}
 		{5D90BFC0-14C1-497B-9067-31AF62C29D70} = {8579E89B-5D8F-49DC-BBAD-732BBB1DFF67}
+		{61BBB901-BC54-4C61-A7E9-5515E028D86D} = {F6BB2A03-9B73-468E-B536-04068AB78A02}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E0DA66FE-7A5F-42F0-9114-FBB031A17C9B}
