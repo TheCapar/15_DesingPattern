@@ -1,0 +1,12 @@
+.Net 8.0 kullanılarak yazılmıştır.
+Sürekli kullandığımız fakat isim olarak bilmediğimiz bir design pattern'dir. Bundan ötürü statik objelerle yazılmış olup herhangi bir nuget paketi veya SQL server kullanılmamıştır.
+
+Iterator Design Pattern sayesinde yapmak istediğimiz işlemleri kurallara uyaraktan sıralı bir şekilde yapmış bulunmaktayız. 
+Temel amacı objelerin hangi sırayla ve hangi kural çerçevesinde göre iletilmesidir.
+
+IteratorPattern klasörü altında design pattern işlemlerini gerçekleştirmeliyiz. Bu klasör altında önemli olan classlar ve interfaceler şu şekildedir:
+1-IIterator=> Temel olaraktan Iterator design pattern'nine ait interface işlemleri burada tutulmaktadır.
+2-IMover=> Yapılacak adım işlemleri ve o kuralların belirlendiği interface classıdır.
+3-Klasör içerisinde model classları bulunmaktadır.
+
+Bu şekilde Iterator Design Pattern'i kullanmış oluyoruz.
