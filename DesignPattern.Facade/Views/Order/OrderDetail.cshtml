@@ -1,0 +1,14 @@
+﻿@model DesignPattern.Facade.DAL.Order
+@{
+    Layout = null;
+}
+<div class="container">
+    <h1>Sipariş Oluştur Sayfası</h1>
+    <form method="post">
+        <br />
+        <label>Müşteri Id</label>
+        <input type="text" asp-for="CustomerID" class="form-control" />
+        <br />
+        <button class="btn btn-outline-primary">Kaydet</button>
+    </form>
+</div>

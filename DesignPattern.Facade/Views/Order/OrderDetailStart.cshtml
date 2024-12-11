@@ -1,0 +1,26 @@
+﻿@model DesignPattern.Facade.DAL.OrderDetail
+@{
+    Layout = null;
+}
+<div class="container">
+    <h1>Sipariş Detay Sayfası</h1>
+    <form method="post">
+        <br />
+        <label>Müşteri Id</label>
+        <input type="text" asp-for="CustomerID" class="form-control"/>
+        <br />
+        <label>Ürün Id</label>
+        <input type="text" asp-for="ProductID" class="form-control" />
+        <br />
+        <label>Sipariş Id</label>
+        <input type="text" asp-for="OrderID" class="form-control" />
+        <br />
+        <label>Ürün Fiyatı</label>
+        <input type="text" asp-for="ProductPrice" class="form-control" />
+        <br />
+        <label>Ürün Adedi</label>
+        <input type="text" asp-for="ProductCount" class="form-control" />
+        <br />
+        <button class="btn btn-outline-primary">Kaydet</button>
+    </form>
+</div>

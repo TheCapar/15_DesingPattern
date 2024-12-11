@@ -33,6 +33,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IteratorDesignPattern", "It
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPattern.Iterator", "IteratorDesignPattern\DesignPattern.Itarator\DesignPattern.Iterator.csproj", "{61BBB901-BC54-4C61-A7E9-5515E028D86D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FacadeDesignPattern", "FacadeDesignPattern", "{4145D433-C1AB-4895-89E9-400DCC30C648}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPattern.Facade", "DesignPattern.Facade\DesignPattern.Facade.csproj", "{0E2ECEEB-9108-4E97-B992-1D7635B3C7DD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,6 +71,10 @@ Global
 		{61BBB901-BC54-4C61-A7E9-5515E028D86D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61BBB901-BC54-4C61-A7E9-5515E028D86D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61BBB901-BC54-4C61-A7E9-5515E028D86D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E2ECEEB-9108-4E97-B992-1D7635B3C7DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E2ECEEB-9108-4E97-B992-1D7635B3C7DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E2ECEEB-9108-4E97-B992-1D7635B3C7DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E2ECEEB-9108-4E97-B992-1D7635B3C7DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -83,6 +91,7 @@ Global
 		{8579E89B-5D8F-49DC-BBAD-732BBB1DFF67} = {BA0874C0-6453-4F83-AAB2-60355B5E4D1D}
 		{5D90BFC0-14C1-497B-9067-31AF62C29D70} = {8579E89B-5D8F-49DC-BBAD-732BBB1DFF67}
 		{61BBB901-BC54-4C61-A7E9-5515E028D86D} = {F6BB2A03-9B73-468E-B536-04068AB78A02}
+		{0E2ECEEB-9108-4E97-B992-1D7635B3C7DD} = {4145D433-C1AB-4895-89E9-400DCC30C648}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E0DA66FE-7A5F-42F0-9114-FBB031A17C9B}
