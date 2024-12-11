@@ -1,0 +1,10 @@
+.Net 8.0 kullanılarak yazılmıştır. Kullandığım nuget paketleri şu şekildedir:
+1-Microsoft.EntityFrameworkCore(9.0.0)
+2-Microsoft.EntityFrameworkCore.Design(9.0.0)
+3-Microsoft.EntityFrameworkCore.Tools(9.0.0)
+4-Microsoft.EntityFrameworkCore.SqlServer
+
+MSSQL server kullanılmıştır.
+
+Facade Design Pattern sayesinde business katmanındaki iş yoğunluğunu MVC projesi içerisinde oluşturduğumuz Facade Design Pattern klasörü içerisinde içerisinde tutmuş bulunmaktayız.
+Bu sayede Context classımız sadece Facade Desing Pattern klasörü içerisinde kullanılmış olup tüm iş katmanı ve kurallar bu klasörün içindeki classlarda yazılmış bulunmaktadır.
