@@ -1,0 +1,11 @@
+.Net 8.0 kullanılarak yazılmıştır. Kullandığım nuget paketleri şu şekildedir:
+1-Microsoft.EntityFrameworkCore(9.0.0)
+2-Microsoft.EntityFrameworkCore.Design(9.0.0)
+3-Microsoft.EntityFrameworkCore.Tools(9.0.0)
+4-Microsoft.EntityFrameworkCore.SqlServer(9.0.0)
+MSSQL Veri Tabanı kullanılmıştır.
+
+Decorator Design Pattern sayesinde classlarımızı interface ve classlar olarak parçalamamız işine yarar. 
+Yani ben yeni bir özellik ekleyeceğimde ona uyumlu olan interface'i veya classı methoduma inherit olarak ekleyerek kullanabiliyorum. 
+Inherit ettiğim classın içindeki metodu override ederektende yeni oluşturduğum class veya kod kuralı için kullanmak istediğim methodu değiştirebiliyorum.
+Ve bu sayede çok fazla dallanma olmadan kısa interfaceler ve classlar sayesinde kuralımızı uygulamış oluyoruz.
